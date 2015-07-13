@@ -9,6 +9,9 @@ thera are some problems about the interchange of two lines
 ---
 ![](https://github.com/hanks-zyh/AnimateCheckBox/blob/master/screen.gif)
 
+---
+Another CheckBox
+[MaterialCheckBox](https://github.com/hanks-zyh/MaterialCheckBox)
 
 #License
 
