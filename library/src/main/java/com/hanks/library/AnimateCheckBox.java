@@ -15,6 +15,7 @@ package com.hanks.library;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+import android.animation.ArgbEvaluator;
 import android.animation.ValueAnimator;
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -69,11 +70,11 @@ public class AnimateCheckBox extends View {
 
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.AnimateCheckBox, defStyleAttr, 0);
 
-        circleColor = a.getDimensionPixelSize(R.styleable.AnimateCheckBox_checkedColor, DEFAULT_CHECKED_COLOR);
-        unCheckColor = a.getDimensionPixelSize(R.styleable.AnimateCheckBox_unCheckColor, DEFAULT_UNCHECK_COLOR);
-        correctColor = a.getDimensionPixelSize(R.styleable.AnimateCheckBox_lineColor, DEFAULT_LINE_COLOR);
+        circleColor = a.getColor(R.styleable.AnimateCheckBox_checkedColor, DEFAULT_CHECKED_COLOR);
+        unCheckColor = a.getColor(R.styleable.AnimateCheckBox_unCheckColor, DEFAULT_UNCHECK_COLOR);
+        correctColor = a.getColor(R.styleable.AnimateCheckBox_lineColor, DEFAULT_LINE_COLOR);
         correctWidth = a.getDimensionPixelSize(R.styleable.AnimateCheckBox_lineWidth, DEFAULT_LINE_WIDTH);
-        animDuration = a.getDimensionPixelSize(R.styleable.AnimateCheckBox_animDuration, DEFAULT_ANIM_DURATION);
+        animDuration = a.getInteger(R.styleable.AnimateCheckBox_animDuration, DEFAULT_ANIM_DURATION);
 
         a.recycle();
 
@@ -224,6 +225,12 @@ public class AnimateCheckBox extends View {
     }
 
     private int evaluate(float fraction, int startValue, int endValue) {
+        if(fraction<=0){
+            return startValue;
+        }
+        if(fraction>=1){
+            return endValue;
+        }
         int startInt = startValue;
         int startA = (startInt >> 24) & 0xff;
         int startR = (startInt >> 16) & 0xff;
