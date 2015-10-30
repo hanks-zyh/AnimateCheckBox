@@ -10,6 +10,9 @@ thera are some problems about the interchange of two lines
 ![](https://github.com/hanks-zyh/AnimateCheckBox/blob/master/screen.gif)
 
 #How to use?
+
+```
+
 <com.hanks.library.AnimateCheckBox
     android:layout_width="50dp"
     android:layout_height="50dp"
@@ -20,6 +23,7 @@ thera are some problems about the interchange of two lines
     app:lineWidth="1.2dp"
     app:unCheckColor="#ff0"/>
 
+```
 ---
 Another CheckBox
 [MaterialCheckBox](https://github.com/hanks-zyh/MaterialCheckBox)
