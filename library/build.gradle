@@ -40,7 +40,7 @@ install {
         pom {
             project {
                 packaging 'aar'
-                name 'Less Code For Android'
+                name 'AnimateCheckBox For Android'
                 url siteUrl
                 licenses {
                     license {
@@ -51,8 +51,8 @@ install {
                 developers {
                     developer {
                         id 'hanks'
-                        name 'hanks.zyh'
-                        email '116174521@qq.com'
+                        name 'hanks-zyh'
+                        email 'zhangyuhan2014@gmail.com'
                     }
                 }
                 scm {
