@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AnimateCheckBox">
+        <attr name="unCheckColor" format="color"/>
+        <attr name="checkedColor" format="color"/>
+        <attr name="lineColor" format="color"/>
+        <attr name="lineWidth" format="integer"/>
+        <attr name="animDuration" format="integer"/>
+    </declare-styleable>
+</resources>
