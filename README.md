@@ -13,7 +13,9 @@ thera are some problems about the interchange of two lines
 #How to use?
 
 ```
-complie 'com.hanks.animatecheckbox:library:0.1'
+dependencies{
+    compile 'com.hanks.animatecheckbox:library:0.1'
+}
 ```
 
 
