@@ -4,13 +4,13 @@ A custom view in Android with a animation when CheckBox status changed :smile:
 ---
 ![](https://img.shields.io/badge/Android-CustomView-brightgreen.svg)
 
-#todo
+# todo
 
 thera are some problems about the interchange of two lines 
 ---
 ![](https://github.com/hanks-zyh/AnimateCheckBox/blob/master/screen.gif)
 
-#How to use?
+# How to use?
 
 ```
 dependencies{
@@ -34,7 +34,7 @@ dependencies{
 Another CheckBox
 [MaterialCheckBox](https://github.com/hanks-zyh/MaterialCheckBox)
 
-#License
+# License
 
 This library is licensed under the [Apache Software License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
 
